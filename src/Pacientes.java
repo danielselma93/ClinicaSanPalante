@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Pacientes {
 private int codigoPaciente;
@@ -22,6 +23,38 @@ public Pacientes (int codigoPaciente, String apellidosPaciente, String nombrePac
 	this.telefonoPaciente=telefonoPaciente;
 	this.fechaDeNacimientoPaciente=fechaDeNacimientoPaciente;
 }
+public Pacientes (int codigoPaciente){
+	Scanner sc = new Scanner (System.in);
+	String nombrePaciente;
+	String apellidosPaciente;
+	String direccionPaciente;
+	String poblacionPaciente;
+	String provinciaPaciente;
+	String codigoPostalPaciente;
+	String telefonoPaciente;
+	String fechaDeNacimientoPaciente;
+	
+	System.out.println("Introduce el nombre del paciente");
+	nombrePaciente = sc.nextLine();
+	System.out.println("Introduce el apellido del paciente");
+	apellidosPaciente = sc.nextLine();
+	System.out.println("Introduce la direccion del paciente");
+	direccionPaciente = sc.nextLine();
+	System.out.println("Introduce la poblacion del paciente");
+	poblacionPaciente = sc.nextLine();
+	System.out.println("Introduce la provincia del paciente");
+	provinciaPaciente = sc.nextLine();
+	System.out.println("Introduce el codigo postal del paciente");
+	codigoPostalPaciente = sc.nextLine();
+	System.out.println("Introduce el telefono del paciente");
+	telefonoPaciente = sc.nextLine();
+	System.out.println("Introduce la fecha de nacimiento del paciente");
+	fechaDeNacimientoPaciente = sc.nextLine();
+	
+	new Pacientes (codigoPaciente,nombrePaciente,apellidosPaciente,direccionPaciente,poblacionPaciente,provinciaPaciente, codigoPostalPaciente, telefonoPaciente, fechaDeNacimientoPaciente );
+	
+}
+
 
 public int getCodigoPaciente() {
 	return codigoPaciente;

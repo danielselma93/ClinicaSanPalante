@@ -26,5 +26,12 @@ public class Principal {
 		Ingresos i=new Ingresos(this.idIngresos++);
 		arrayIngresos.add(i);
 	}
-
+	public void anyadePaciente(){
+		Pacientes i=new Pacientes(this.idPacientes++);
+		arrayPacientes.add(i);
+}
+	public void anyadeMedico(){
+		Medicos i=new Medicos(this.idMedicos++);
+		arrayMedicos.add(i);
+	}
 }

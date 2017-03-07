@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Medicos {
  private int codigo;
@@ -13,7 +14,26 @@ public class Medicos {
 	this.telefono=telefono;
 	this.especialidad=especialidad;
 }
-
+public Medicos (int codigo){
+	Scanner sc = new Scanner (System.in);
+	String nombre;
+	String apellidos;
+	String telefono;
+	String especialidad;
+	
+	System.out.println("Introduce el nombre del medico");
+	nombre = sc.nextLine();
+	System.out.println("Introduce el apellido del medico");
+	apellidos = sc.nextLine();
+	System.out.println("Introduce el numero de telefono");
+	telefono = sc.nextLine();
+	System.out.println("Introduce la especialidad del medico");
+	especialidad = sc.nextLine();
+	new Medicos (codigo,nombre, apellidos, telefono, especialidad);
+	
+}
+ 
+ 
 public int getCodigo() {
 	return codigo;
 }
