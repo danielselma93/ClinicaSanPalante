@@ -10,7 +10,7 @@ private String codigoPostalPaciente;
 private String telefonoPaciente;
 private String fechaDeNacimientoPaciente;
 
-public Pacientes (int codigoPaciente, String nombrePaciente, String direccionPaciente, String poblacionPaciente, String provinciaPaciente, 
+public Pacientes (int codigoPaciente, String apellidosPaciente, String nombrePaciente, String direccionPaciente, String poblacionPaciente, String provinciaPaciente, 
 		String codigoPostalPaciente,  String telefonoPaciente, String fechaDeNacimientoPaciente){
 	this.codigoPaciente=codigoPaciente;
 	this.nombrePaciente=nombrePaciente;

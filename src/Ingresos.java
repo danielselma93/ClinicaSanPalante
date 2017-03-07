@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Ingresos {
 private int codigoIngreso;
@@ -13,6 +14,25 @@ public Ingresos (int codigoIngreso, int numHabitacion, int cama, String fechaDeI
 	this.fechaDeIngreso=fechaDeIngreso;
 	this.medicoQueAtendioAlPaciente=medicoQueAtendioAlPaciente;
 	
+}
+public Ingresos(int idIngress){
+	Scanner sc = new Scanner (System.in);
+	int numHabitacion;
+	int cama;
+	String fechaDeIngreso;
+	String medicoQueAtendioAlPaciente;
+	
+	System.out.println("Introduce el numero de habitacion");
+	numHabitacion = sc.nextInt();
+	sc.nextLine();
+	System.out.println("Introduce el numero de cama");
+	cama = sc.nextInt();
+	sc.nextLine();
+	System.out.println("Introduce la fecha de ingreso (aaaa/mm/dd)");
+	fechaDeIngreso = sc.nextLine();
+	System.out.println("Introduce el nombre del medico que lo atendio");
+	medicoQueAtendioAlPaciente = sc.nextLine();
+	new Ingresos (idIngress,numHabitacion,cama,fechaDeIngreso,medicoQueAtendioAlPaciente);
 }
 public int getCodigoIngreso() {
 	return codigoIngreso;
