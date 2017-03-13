@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ingresos {
@@ -64,4 +65,6 @@ public String getMedicoQueAtendioAlPaciente() {
 public void setMedicoQueAtendioAlPaciente(String medicoQueAtendioAlPaciente) {
 	this.medicoQueAtendioAlPaciente = medicoQueAtendioAlPaciente;
 }
+
+
 }

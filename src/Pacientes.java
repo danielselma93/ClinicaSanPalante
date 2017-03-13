@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Pacientes {
@@ -11,7 +12,7 @@ private String codigoPostalPaciente;
 private String telefonoPaciente;
 private String fechaDeNacimientoPaciente;
 
-public Pacientes (int codigoPaciente, String apellidosPaciente, String nombrePaciente, String direccionPaciente, String poblacionPaciente, String provinciaPaciente, 
+public Pacientes (int codigoPaciente, String nombrePaciente, String apellidosPaciente, String direccionPaciente, String poblacionPaciente, String provinciaPaciente, 
 		String codigoPostalPaciente,  String telefonoPaciente, String fechaDeNacimientoPaciente){
 	this.codigoPaciente=codigoPaciente;
 	this.nombrePaciente=nombrePaciente;
@@ -52,6 +53,9 @@ public Pacientes (int codigoPaciente){
 	fechaDeNacimientoPaciente = sc.nextLine();
 	
 	new Pacientes (codigoPaciente,nombrePaciente,apellidosPaciente,direccionPaciente,poblacionPaciente,provinciaPaciente, codigoPostalPaciente, telefonoPaciente, fechaDeNacimientoPaciente );
+	
+}
+public Pacientes(){
 	
 }
 
@@ -110,4 +114,6 @@ public String getFechaDeNacimientoPaciente() {
 public void setFechaDeNacimientoPaciente(String fechaDeNacimientoPaciente) {
 	this.fechaDeNacimientoPaciente = fechaDeNacimientoPaciente;
 }
+
+
 }

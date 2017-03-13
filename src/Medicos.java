@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Medicos {
@@ -75,7 +76,7 @@ public void setEspecialidad(String especialidad) {
 }
  
  
- 
+
  
  
 }
